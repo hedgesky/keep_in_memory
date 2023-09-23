@@ -1,0 +1,38 @@
+# To learn more information on internationalization in Rails, please read the guide:
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  web_app:
+    launch: Start
+  decks:
+    en:
+      name: English
+      header: Do you remember this word in English?
+    fr:
+      name: French
+      header: Do you remember this word in French?
+    es:
+      name: Spanish
+      header: Do you remember this word in Spanish?
+    ru:
+      name: Russian
+      header: Do you remember this word in Russian?
+  bot:
+    start: "Start"
+    welcome: "Tap the button below to start practicing foreign languages:"
+  screens:
+    home:
+      title: "Choose language:"
+    learning:
+      next: NEXT
+      yep: "YES"
+      nope: "No"
+    finished:
+      congrats: Congratulations 🎉
+      partial_progress: You've practiced %{per_session}/%{total} words. Great job!
+      continue_learning: Continue practicing
+      deck_fully_completed: You've practiced the whole set of words, amazing!<br /><br />Come back another day.
+      close: CLOSE
+  tutorial:
+    title: Tutorial
+    message: "You forgot a translation — that happens. We'll show you this word again later during the session so you could revisit it.\n\nNo worries, we won't bother your with this popup anymore 🙂"

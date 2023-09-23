@@ -1,0 +1,22 @@
+.screen-finished {
+  background-color: var(--block-bg-color);
+
+  -webkit-box-shadow: 0 0.5px rgba(0, 0, 0, .07);
+  box-shadow: 0 0.5px rgba(0, 0, 0, .07);
+  margin: 0;
+  padding: 1em 2em 2em;
+}
+
+.screen-finished .continue-btn {
+  text-transform: none;
+}
+
+.screen-finished .contents {
+  opacity: 1;
+
+  transition: opacity 0.8s linear 0.1s;
+}
+
+.screen-finished .contents.invisible {
+  opacity: 0;
+}

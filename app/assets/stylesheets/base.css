@@ -1,0 +1,73 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  min-width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+
+  --text-color: var(--tg-theme-text-color, #222);
+  --bg-color: var(--tg-theme-secondary-bg-color, #ebedf0);
+  --block-bg-color: var(--tg-theme-bg-color, #fff);
+  --link-color: var(--tg-theme-link-color, #007aff);
+  --btn-text-color: var(--tg-theme-button-text-color, #fff);
+  --primary-btn-color: var(--tg-theme-button-color, #2ea6ff);
+  --success-btn-color: #31b545;
+  --danger-btn-color: #e64d44;
+}
+
+html.dark body {
+  --text-color: var(--tg-theme-text-color, #fff);
+  --bg-color: var(--tg-theme-secondary-bg-color, #0f0f0f);
+  --block-bg-color: var(--tg-theme-bg-color, #2f2f2f);
+  --success-btn-color: #31b545;
+  --danger-btn-color: #e64d44;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h2 {
+  font-size: 1.3em;
+  line-height: 1.1em;
+  margin-top: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 6px 16px;
+  height: 30px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: var(--btn-text-color);
+  outline: none;
+  border: none;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-btn-color);
+}
+
+.btn.btn-success {
+  background-color: var(--success-btn-color);
+}
+
+.btn.btn-danger {
+  background-color: var(--danger-btn-color);
+}

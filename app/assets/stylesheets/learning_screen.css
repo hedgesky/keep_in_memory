@@ -1,0 +1,56 @@
+.screen-learning {
+  text-align: center;
+}
+
+.screen-learning .header {
+  background-color: var(--block-bg-color);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  margin-bottom: 2em;
+
+  -webkit-box-shadow: 0 0.5px rgba(0, 0, 0, .07);
+  box-shadow: 0 0.5px rgba(0, 0, 0, .07);
+
+  position: relative;
+}
+
+.screen-learning .question-section, .screen-learning .answer-section {
+  font-size: 18px;
+}
+
+.screen-learning .answer-section {
+  z-index: -1;
+  top: 0;
+  position: relative;
+
+  transition: top 0.2s ease;
+}
+
+.screen-learning .answer-section.invisible {
+  top: -100px;
+
+  transition: top 0.5s ease;
+}
+
+.screen-learning .btn-nope-wrapper {
+  overflow: hidden;
+}
+
+.screen-learning .btn-nope {
+  display: inline-block;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 340px; /* fallback in case resize event wasn't triggered */
+  height: 3em;
+  margin-top: 0px;
+
+  transition: top 0.2s ease, margin-top 0.2s ease;
+}
+
+.screen-learning .btn-nope.invisible {
+  margin-top: 100px;
+  transition: margin-top 0.5s ease;
+}

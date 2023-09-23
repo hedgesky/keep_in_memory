@@ -1,0 +1,24 @@
+.screen-home {
+  background-color: var(--block-bg-color);
+  text-align: center;
+
+  -webkit-box-shadow: 0 0.5px rgba(0, 0, 0, .07);
+  box-shadow: 0 0.5px rgba(0, 0, 0, .07);
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.screen-home .language {
+  display: block;
+  margin-top: 1.5em;
+}
+
+.screen-home .choose-language {
+  margin-top: 2em;
+}
+
+.screen-home .btn {
+  min-width: 50%;
+  min-height: 2.6em;
+}

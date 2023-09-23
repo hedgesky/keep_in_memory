@@ -1,0 +1,15 @@
+<section class="screen screen-finished hidden">
+  <div class="contents js-finished-section-contents invisible">
+    <h2 class="title"><%= t("screens.finished.congrats") %></h2>
+
+    <p class="js-partial-progress">
+      <%= t("screens.finished.partial_progress", per_session: @app_config.fetch(:cards_per_session), total: Word.all.count) %>
+    </p>
+
+    <p class="js-deck-fully-completed">
+      <%= raw(t("screens.finished.deck_fully_completed")) %>
+    </p>
+
+    <button class="continue-btn btn btn-primary js-continue-learning"><%= t("screens.finished.continue_learning") %></a>
+  </div>
+</section>

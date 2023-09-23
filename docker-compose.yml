@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    env_file: .env
+    volumes:
+      - .:/app:cached
+    ports:
+      - "3000:3000"
+    command: bash -c "rm -f tmp/pids/server.pid && rails s -p 3000 -b '0.0.0.0'"
+
+  long_poller:
+    build: .
+    env_file: .env
+    volumes:
+      - .:/app:cached
+    command: bash -c "bundle exec rake telegram:bot:poller"

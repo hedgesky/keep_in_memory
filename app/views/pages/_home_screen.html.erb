@@ -1,0 +1,13 @@
+<section class="screen screen-home">
+  <h2 class="title"><%= t("screens.home.title") %></h2>
+
+  <section class="choose-language">
+    <% @decks.each do |deck| %>
+      <div class="language">
+        <button class="btn btn-primary js-choose-language" data-id="<%= deck.code %>">
+          <span><%= deck.name %></span>
+        </button>
+      </div>
+    <% end %>
+  </section>
+</section>

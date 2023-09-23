@@ -1,0 +1,9 @@
+<%= render "home_screen" %>
+<%= render "learning_screen" %>
+<%= render "finished_screen" %>
+
+<script>
+  window.Decks = <%= raw(@decks.index_by(&:code).to_json) %>
+  window.Translations = <%= raw(@translations.to_json) %>
+  window.AppConfig = <%= raw(@app_config.to_json) %>
+</script>

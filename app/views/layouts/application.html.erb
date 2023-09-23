@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KeepInMemory</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= stylesheet_link_tag "application" %>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      try {
+        document.documentElement.className = Telegram.WebApp.colorScheme;
+      } catch(error) {}
+    </script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <script src="https://tg.dev/js/jquery.min.js"></script>
+  <%= javascript_include_tag "application" %>
+</html>

@@ -1,0 +1,36 @@
+es:
+  web_app:
+    launch: Empezar
+  decks:
+    en:
+      name: Inglés
+      header: Recuerdas esta palabra en inglés?
+    fr:
+      name: Francés
+      header: Recuerdas esta palabra en francés?
+    es:
+      name: Español
+      header: Recuerdas esta palabra en español?
+    ru:
+      name: Ruso
+      header: Recuerdas esta palabra en ruso?
+  bot:
+    start: "Empezar"
+    welcome: "Tap the button below to start practicing foreign languages:"
+    welcome: "Pulsa el botón para practicar idiomas:"
+  screens:
+    home:
+      title: "Elige el idioma:"
+    learning:
+      next: Siguiente
+      yep: "SÍ"
+      nope: "NO"
+    finished:
+      congrats: Enhorabuena 🎉
+      partial_progress: Has practicado %{per_session}/%{total} palabras. Muy bien!
+      continue_learning: Seguir practicando
+      deck_fully_completed: Has repasado todo el conjunto de palabras, increíble!<br /><br />Vuelve otro día para practicar más palabras.
+      close: CERRAR
+  tutorial:
+    title: Tutorial
+    message: "Olvidaste una traducción, eso sucede. Te mostraremos esta palabra otra vez más tarde para que puedas volver a repasarla.\n\nNo te preocupes, ya no te molestaremos con esta mensaje 🙂"
