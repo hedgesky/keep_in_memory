@@ -92,6 +92,9 @@ Now, if you proceed to the app link that [@BotFather](https://t.me/BotFather) se
   - Not all Telegram clients support Mini Apps equally. If you experience issues opening this Mini App, try updating your Telegram client app.
   - If the Rails app exits with an error like `key not found: BOT_HOST`, check that the app's root folder contains `.env` file with the required config variables.
   - If the Mini Apps doesn't open in the Telegram Client and just loads indefinitely, check the Rails logs in the terminal to see if there are any errors. Also, you might try to open http://localhost:3000 in your browser to see if the Rails app is operational. If it is, you'd see the home screen of the app (but it won't be fully functional).
+  - The output from the `docker-compose up` command from step 5 should be similar to the image below. If it contains errors instead, the error messages might point to the issue.
+
+    ![output of the "docker-compose up" command](/docs/docker-compose.png)
 </details>
 
 ---
