@@ -77,7 +77,7 @@ Once you have it installed, launch the following command in the terminal in the 
 docker-compose up
 ```
 
-That's it! This command launched two processes: a web server to generate HTML/CSS/JS content, and a so-called *long poller* to respond to messages to your bot.
+That's it! This command launched two processes: a web server to generate HTML/CSS/JS content, and a process which responds to messages to your bot.
 
 Now, if you proceed to the app link that [@BotFather](https://t.me/BotFather) sent you (like [t.me/YourBot/your_app](https://t.me/YourBot/your_app)), you will see a confirmation from Ngrok. Accept it, and you will see your app!
 
@@ -116,12 +116,12 @@ This project follows the standard Ruby on Rails structure. You can learn more ab
 - `app/controllers/pages_controller.rb`: prepares the data to be displayed in the app.
 - `app/views/layouts/application.html.erb`: defines links to CSS and JS files.
 - `app/views/pages/*.html.erb`: define the HTML content of the app.
-- `app/assets/stylesheets/*.css`: define how the app looks like.
+- `app/assets/stylesheets/*.css`: define how the app looks.
 - `app/assets/javascripts/*.js`: define how the app behaves.
 - `config/routes.rb`: defines which controllers would process which requests.
 - `config/initializers/telegram.rb`, `config/application.rb`: configure the bot's token and host.
 - `config/locales/*`: app's texts in English, Spanish, and Russian.
-- `Dockerfile`, `docker-compose.yml`: an instruction to Docker on how to build and launch this project.
+- `Dockerfile`, `docker-compose.yml`: Docker will use these files to build and launch this project.
 - `Gemfile`: list of the project's dependencies to be installed by Docker.
 
 There are other files in the app's directory, but they mostly contain boilerplate code and aren't required to understand how the project works.
