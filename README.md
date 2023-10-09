@@ -200,7 +200,6 @@ This app is translated into English, Russian, and Spanish languages. Three types
 - Bot's name, description, and short description;
   - Those could be configured by executing commands like `Telegram.bot.set_my_name(language_code: "es", name: name)` in the Rails console.
 
-
 ## Deployment of the app for production usage
 
 The following steps were required to deploy [t.me/KeepInMemoryBot/app](https://t.me/KeepInMemoryBot/app
@@ -218,4 +217,6 @@ Also, it's worth noting that in production, it's a good practice to monitor exce
 
 ## Demo video
 
-https://github.com/hedgesky/keep_in_memory/assets/3628124/fbcdcca8-cee7-46ad-be45-969860cd5068
+https://github.com/hedgesky/keep_in_memory/assets/3628124/8cb6ce66-aeb4-4a8f-bbf1-41b992f8c7f3
+
+
