@@ -138,6 +138,8 @@ There are other files in the app's directory, but they mostly contain boilerplat
 
 **No database is used**. For simplicity and ease of installation, this project doesn't use a database. Instead, the 10 demo words and their translations are defined in `app/models/word.rb`.
 
+**Spanish speakers don't need to learn Spanish**. The app doesn't show the choice to study Spanish for users with the Spanish language in their Telegram settings. This is defined at `app/models/deck.rb:16`.
+
 ### Exception handling (backend)
 
 This app communicates with Telegram API. If it's unavailable, exceptions will occur. Here's how we handle them:

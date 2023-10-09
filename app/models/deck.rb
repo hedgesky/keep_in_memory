@@ -11,6 +11,8 @@ class Deck
 
   def self.all
     language_codes = %w[en es fr ru]
+    # removing the current locale from the available languages —
+    # so that English speakers won't see the choice of English language
     language_codes -= [I18n.locale.to_s]
     language_codes.map do |language_code|
       cards = Card.all_for(source: I18n.locale.to_s, target: language_code)
