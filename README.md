@@ -7,6 +7,8 @@ This repository contains the source code for a demo Telegram Mini App: [t.me/Kee
 
 The app is called "Keep in Memory" and allows you to repeat words of foreign languages. Here, we describe all its aspects — but if you want to just launch the app locally, following the [Local installation](#local-installation) is enough.
 
+There's a demo video [below](#demo-video).
+
 - [Local installation](#local-installation)
   - [Installation troubleshooting](#installation-troubleshooting)
 - [How the app works](#how-the-app-works)
@@ -18,6 +20,7 @@ The app is called "Keep in Memory" and allows you to repeat words of foreign lan
 - [App's interactions with Telegram API](#apps-interactions-with-telegram-api)
 - [Translations organization](#translations-organization)
 - [Deployment of the app for production usage](#deployment-of-the-app-for-production-usage)
+- [Demo video](#demo-video)
 
 ## Local installation
 
@@ -210,3 +213,7 @@ The following steps were required to deploy [t.me/KeepInMemoryBot/app](https://t
 Particular commands will depend greatly on the deployment environment, so they aren't described here.
 
 Also, it's worth noting that in production, it's a good practice to monitor exceptions to be able to react to issues faster.
+
+## Demo video
+
+https://github.com/hedgesky/keep_in_memory/assets/3628124/fbcdcca8-cee7-46ad-be45-969860cd5068
